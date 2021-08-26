@@ -4,10 +4,9 @@ With Facric , creates a tgz archive
 from web_static content folder
 """
 
+from fabric.api import env, local, put, run
 from datetime import datetime
-from fabric.api import local
-from os.path import isdir
-from os.path import exists
+from os.path import exists, isdir
 env.hosts = ['34.73.133.125', '52.201.252.232']
 
 
