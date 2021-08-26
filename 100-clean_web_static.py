@@ -12,7 +12,7 @@ env.hosts = ['34.73.133.125', '52.201.252.232']
 
 def local_clean(numer=0):
     """Local Clean"""
-    fd_list = local('ls -1t verions', capture=True)
+    fd_list = local('ls -1t versions', capture=True)
     fd_list = fd_list.split('\n')
     n = int(number)
     if n in (0, 1):
