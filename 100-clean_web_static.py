@@ -10,7 +10,7 @@ from os.path import exists, isdir
 env.hosts = ['34.73.133.125', '52.201.252.232']
 
 
-def local_clean(numer=0):
+def local_clean(number=0):
     """Local Clean"""
     fd_list = local('ls -1t versions', capture=True)
     fd_list = fd_list.split('\n')
@@ -22,7 +22,7 @@ def local_clean(numer=0):
         local('rm versions/' + i)
 
 
-def remote_clean(numer=0):
+def remote_clean(number=0):
     """Remote Clean"""
     fd_list = run('ls -1t /data/web_static/releases')
     fd_list = fd_list.split('\r\n')
