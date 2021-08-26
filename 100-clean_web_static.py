@@ -29,8 +29,6 @@ def remote_clean(numer=0):
     if n in (0, 1):
         n = 1
     for i in fd_list[n:]:
-        if i is 'test':
-            continue
         run('sudo rm -rf /data/web_static/releases/' + i)
 
 
