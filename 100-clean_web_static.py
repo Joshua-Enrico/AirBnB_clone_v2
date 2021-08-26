@@ -60,7 +60,6 @@ def local_clean(numer=0):
     num = int(number)
     if n in (0, 1):
         n = 1
-    print(len(fd_list[n:]))
     for i in fd_list[n:]:
         local('rm versions/' + i)
 
@@ -69,7 +68,6 @@ def remote_clean(numer=0):
     """Remote Clean"""
     fd_list = run('ls -1t /data/web_static/releases')
     fd_list = fd_list.split('\r\n')
-    print(fd_list)
     numb = int(number)
     if n in (0, 1):
         n = 1
