@@ -18,7 +18,7 @@ def local_clean(numer=0):
     if n in (0, 1):
         n = 1
     for i in fd_list[n:]:
-        local('rm versions/' + i)
+        local('sudo rm versions/' + i)
 
 
 def remote_clean(numer=0):
@@ -31,7 +31,7 @@ def remote_clean(numer=0):
     for i in fd_list[n:]:
         if i is 'test':
             continue
-        run('rm -rf /data/web_static/releases/' + i)
+        run('sudo rm -rf /data/web_static/releases/' + i)
 
 
 def do_clean(number=0):
