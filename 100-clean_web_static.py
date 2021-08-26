@@ -14,7 +14,7 @@ def local_clean(numer=0):
     """Local Clean"""
     fd_list = local('ls -1t verions', capture=True)
     fd_list = fd_list.split('\n')
-    num = int(number)
+    n = int(number)
     if n in (0, 1):
         n = 1
     print(len(fd_list[n:]))
@@ -27,9 +27,10 @@ def remote_clean(numer=0):
     fd_list = run('ls -1t /data/web_static/releases')
     fd_list = fd_list.split('\r\n')
     print(fd_list)
-    numb = int(number)
+    n = int(number)
     if n in (0, 1):
         n = 1
+    print(len(fd_list[n:]))
     for i in fd_list[n:]:
         if i is 'test':
             continue
