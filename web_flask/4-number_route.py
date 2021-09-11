@@ -34,10 +34,10 @@ def pythoncool(text='is cool'):
     return "Python " + text.replace('_', ' ')
 
 
-@app.route('/number/<int:n>', strict_slashes=False)
-def imanumber(n):
-    """display “n is a number” only if n is an integer"""
-    return "{:d} is a number".format(n)
+@app.route('/number/<int:n>')
+def numb(n):
+    """ display python with value of text variable """
+    return '{:d} is number'.format(n)
 
 
 if __name__ == '__main__':
