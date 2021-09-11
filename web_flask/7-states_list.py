@@ -2,6 +2,7 @@
 """Simple Flask app, with additional route"""
 from flask import Flask, abort, render_template
 from models import storage
+from models.state import State
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -10,7 +11,7 @@ app.url_map.strict_slashes = False
 @app.route('/states_list')
 def run_all_states():
     """Run all states"""
-    l_list = storage.all('State')
+    l_list = storage.all(State)
     return render_template('7-states_list.html', l_list=l_list)
 
 
