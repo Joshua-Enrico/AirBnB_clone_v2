@@ -36,6 +36,7 @@ def python(text='is cool'):
 
 @app.route('/number/<int:n>')
 def numb(n):
+    """ display python with value of text variable"""
     return '{:d} is number'.format(n)
 
 
