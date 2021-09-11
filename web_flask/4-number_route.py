@@ -29,8 +29,8 @@ def c(text):
 
 @app.route('/python')
 @app.route('/python/<text>')
-def python(text='is cool'):
-    """ display python with value of text variable"""
+def pythoncool(text='is cool'):
+    """display python with value of text variable"""
     return "Python " + text.replace('_', ' ')
 
 
