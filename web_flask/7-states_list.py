@@ -54,10 +54,6 @@ def odd_even(n):
     return render_template('6-number_odd_or_even.html', n=n, var=var)
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
-
 @app.route('/states_list')
 def run_all_states():
     """Run all states"""
@@ -71,5 +67,5 @@ def do_teardown(self):
     storage.close()
 
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
