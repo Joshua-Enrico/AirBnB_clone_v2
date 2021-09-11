@@ -37,7 +37,7 @@ def pythoncool(text='is cool'):
 @app.route('/number/<int:n>')
 def numb(n):
     """ display python with value of text variable """
-    return '{:d} is number'.format(n)
+    return '{:d} is a number'.format(n)
 
 
 if __name__ == '__main__':
