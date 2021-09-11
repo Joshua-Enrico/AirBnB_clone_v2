@@ -36,7 +36,7 @@ def python(text='is cool'):
 
 @app.route('/number/<int:n>')
 def numb(n):
-    """ display value of n var if it is int"""
+    """ display value of n var if it is int """
     return '{:d} is number'.format(n)
 
 

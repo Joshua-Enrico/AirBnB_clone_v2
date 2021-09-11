@@ -23,14 +23,14 @@ def hbnb():
 
 @app.route('/c/<text>')
 def c(text):
-    """ display C with value in variable text"""
+    """ display C with value in variable text """
     return 'C ' + text.replace('_', ' ')
 
 
 @app.route('/python')
 @app.route('/python/<text>')
 def pythoncool(text='is cool'):
-    """display python with value of text variable"""
+    """ display python with value of text variable """
     return "Python " + text.replace('_', ' ')
 
 
