@@ -11,8 +11,9 @@ app.url_map.strict_slashes = False
 @app.route('/states/')
 @app.route('/states/<state_id>')
 def states(state_id=None):
+    """render something"""
     states = storage.all(State)
-    if id is not None:
+    if state_id is not None:
         state_id = 'State.' + str(id)
     return render_template('9-states.html', states=states, state_id=state_id)
 
