@@ -56,8 +56,11 @@ section.filters button:hover {
     left: -61px;
     width: 100%;
     z-index: 1;
+    max-height: 300px;
+    min-height: 200px;
     margin-top: 17px;
     padding: 30px 50px 30px 10px;
+    overflow: auto;
 }
 
 .popover, .popover ul {
